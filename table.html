@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table example</title>
+    <style>
+        #report{
+            width: 600px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        #report tr th{
+            background-color: black;
+            color: white;
+            height: 40px;
+        }
+        #report tr td{
+            height: 30px;
+        }
+        tr:nth-child(even) {background:lightpink}
+        tr:nth-child(odd) {background:lightblue}
+    </style>
+</head>
+<body>
+    <table border="1" id="report">
+    <thead>
+    <tr><th colspan="3"> Employee Information</th></tr>
+    <tr><th>S1 NO</th><th>Name</th><th>Location</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>1</td><td>Sahana</td><td>kalaburgi</td></tr>
+    <tr><td>2</td><td>Suhana</td><td>Mysure</td></tr>
+    <tr><td>3</td><td>Geeta</td><td>Bengalur</td></tr>
+    <tr><td>4</td><td>Bindu</td><td rowspan="2">Ballari</td></tr>
+    <tr><td>5</td><td>Madhu</td></tr>
+    </tbody>
+</table>
+</body>
+</html>
