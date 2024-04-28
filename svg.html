@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scaleable vector grapiic</title>
+    <style>
+        svg{
+            border: solid 1px red;
+        }
+    </style>
+</head>
+<body>
+    <p>default svg size 300*150</p>
+    <svg></svg>
+    <p>rect svg</p>
+    <svg width="300" height="300">
+    <rect x="75" y="75" width="150" height="150"
+    style="fill :red"></rect>
+    <rect x="100" y="100" width="150" height="150" style="fill:green;opacity:0.5"></rect>
+    </svg>
+    
+    <p>circle svg</p>
+    <svg width="300" height="300">
+    <circle cx="150" cy="150" r="40"
+    style="fill :red"></circle>
+    </svg>
+
+    <p>line svg</p>
+    <svg width="200" height="200">
+    <line x1="0" y1="0" x2="200" y2="200"
+    stroke-width="2" stroke="green"></line>
+    </svg>
+    
+</body>
+</html>
