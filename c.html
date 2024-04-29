@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Example</title>
+  <style>
+    canvas {
+      
+    }
+  </style>
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="200"></canvas>
+
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById("myCanvas");
+    // Get the canvas context
+    var ctx = canvas.getContext("2d");
+
+    // Draw a red rectangle
+    ctx.fillStyle = "red";
+    ctx.fillRect(50, 50, 100, 80);
+
+    // Draw a blue circle
+    ctx.beginPath();
+    ctx.arc(300, 100, 50, 0, 2 * Math.PI);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+
+    // Draw text
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "black";
+    ctx.fillText("Hello, Canvas!", 150, 150);
+  </script>
+</body>
+</html>
