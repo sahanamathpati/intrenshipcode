@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery example</title>
+
+    <style>
+        *{ margin:1px; padding:0px;}
+        .box{height: 200px; width: 200px; background-color: blue; border:solid 3px red; padding:5px;}
+        .abc{background-color: red; border:solid 3px green;}
+    </style>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+    <script>
+        $(function(){
+            $("#hide").click(function(){$("div").hide(3000)})
+            $("#show").click(function(){$("div").show(3000)})
+            $("#toggle").click(function(){$("div").toggle(3000)})
+
+            $("#fadein").click(function(){$("div").fadeIn(3000)})
+            $("#fadeout").click(function(){$("div").fadeOut(3000)})
+            $("#fadetoggle").click(function(){$("div").fadeToggle(3000)})
+
+            $("#fadeto").click(function(){$("div").fadeTo(3000,0.2)})
+            $("#animate").click(function(){$("div").animate({width:"400",height:"400"},5000)})
+            $("#height").click(function(){alert("Height:"+$("div").height())})  //only height
+            $("#width").click(function(){alert("Width:"+$("div").width())})
+
+            $("#iheight").click(function(){alert("innerHeight:"+$("div").innerHeight())})
+            $("#iwidth").click(function(){alert("innerWidth:"+$("div").innerWidth())})
+
+            $("#oheight").click(function(){alert("outerHeight:"+$("div").outerHeight())})
+            $("#owidth").click(function(){alert("outerWidth:"+$("div").outerWidth())})
+
+            $("#append").click(function(){+$("#demo").append("Digisnare")})
+            $("#prepend").click(function(){+$("#demo").prepend("Welcome")})
+            $("#after").click(function(){+$("#demo").after("Digisnare")})
+            $("#before").click(function(){+$("#demo").before("Welcome")})
+
+            $("#gethtml").click(function(){alert($("#demo").html())})
+            $("#gettext").click(function(){alert($("#demo").text())})
+            $("#getval").click(function(){alert($("#demo1").val())})
+
+            $("#sethtml").click(function(){alert($("#demo").html())})
+            $("#settext").click(function(){alert($("#demo").text())})
+            $("#setval").click(function(){alert($("#demo1").val())})
+             
+            $("#first").click(function(){$("li").first().css({color:"blue"})})
+            $("#last").click(function(){$("li").last().css({color:"blue"})})
+            $("#eq").click(function(){$("li").eq(1).css({color:"blue"})})
+
+            $("#css").click(function(){$("div").css({backgroundColor:"green"})})
+            $("#prev").click(function(){$("h2").prev().css({backgroundColor:"blue"})})
+            $("#next").click(function(){$("h2").next(1).css({backgroundColor:"blue"})})
+
+            $("#aclass").click(function(){$("div").addClass("abc")})
+            $("#rclass").click(function(){$("div").removeClass("abc")})
+        })
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <p id="demo"> I am <b>text</b></p>
+    <ul id="demo2">
+        <li>First</li>
+        <li>Second</li>
+        <li>thired</li>
+        <li>last</li>
+    </ul>
+    <h1>Welcome to Digisnare</h1>
+    <h2>Hello Digisnare</h2>
+    <h3>Good Morning</h3>
+    <input type="text" id="demo1" value="digisnare"><br>
+
+    <input type="button" value="hide" id="hide">
+    <input type="button" value="show" id="show">
+    <input type="button" value="toggle" id="toggle">
+
+    <input type="button" value="fadein(show)" id="fadein">
+    <input type="button" value="fadeout(hide)" id="fadeout">
+    <input type="button" value="fadetoggle" id="fadetoggle">
+
+    <input type="button" value="fadeto" id="fadeto">
+    <input type="button" value="animate" id="animate">
+    <input type="button" value="height" id="height">
+    <input type="button" value="width" id="width">
+
+    <input type="button" value="iheight" id="iheight">
+    <input type="button" value="iwidth" id="iwidth">
+
+    <input type="button" value="oheight" id="oheihgt">
+    <input type="button" value="owidth" id="owidth">
+
+    <input type="button" value="append" id="append">
+    <input type="button" value="prepend" id="prepend">
+    <input type="button" value="after" id="after">
+    <input type="button" value="before" id="before">
+
+    <input type="button" value="gethtml" id="sethtml">
+    <input type="button" value="gettext" id="settext">
+    <input type="button" value="getval" id="setval">
+
+    <input type="button" value="sethtml" id="sethtml">
+    <input type="button" value="settext" id="settext">
+    <input type="button" value="setval" id="setval">
+
+    <input type="button" value="first" id="first">
+    <input type="button" value="eq" id="eq">
+    <input type="button" value="thired" id="thired">
+    <input type="button" value="last" id="last">
+
+    <input type="button" value="css" id="css">
+    <input type="button" value="prev" id="prev">
+    <input type="button" value="next" id="next">
+
+    <input type="button" value="aclass" id="aclass">
+    <input type="button" value="rclass" id="rclass">
+</body>
+</html>

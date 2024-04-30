@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pomodoro Timer</title>
+<style>
+  #timer {
+    font-size: 36px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+<div id="timer">25:00</div>
+<button onclick="startTimer()">Start</button>
+<button onclick="stopTimer()">Stop</button>
+<button onclick="resetTimer()">Reset</button>
+
+<script>
+let time = 1500; // 25 minutes in seconds
+let interval;
+let running = false;
+
+function startTimer() {
+  if (!running) {
+    interval = setInterval(updateTimer, 1000);
+    running = true;
+  }
+}
+
+function stopTimer() {
+  clearInterval(interval);
+  running = false;
+}
+
+function resetTimer() {
+  clearInterval(interval);
+  time = 1500; // reset to 25 minutes
+  updateDisplay();
+  running = false;
+}
+
+function updateTimer() {
+  if (time > 0) {
+    time--;
+    updateDisplay();
+  } else {
+    clearInterval(interval);
+    alert("Time's up!");
+    // Here you can implement logic for break and long break intervals
+    time = 1500; // reset to 25 minutes
+    updateDisplay();
+    running = false;
+  }
+}
+
+function updateDisplay() {
+  const minutes = Math.floor(time / 60);
+  const seconds = time % 60;
+  document.getElementById("timer").innerText = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number methods</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #box{
+            height: 100px;
+            width: 400px;
+            background-color: pink;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <script>document.write(Date());</script>
+    </div>   
+    <table border="1">
+        <tr><th>date()</th><td id="date"></td></tr>
+        <tr><th>month()</th><td id="month"></td></tr>
+        <tr><th>year()</th><td id="year"></td></tr>
+        
+        <tr><th>hour</th><td id="hour"></td></tr>
+        <tr><th>min</th><td id="min"></td></tr>
+        <tr><th>sec</th><td id="sec"></td></tr>
+     
+    </table>
+    <script>
+     d=new Date();
+    document.getElementById("date").innerHTML=d.getDate();
+    document.getElementById("month").innerHTML=d.getMonth();
+    document.getElementById("year").innerHTML=d.getFullYear();
+
+    document.getElementById("hour").innerHTML=d.getHours();
+    document.getElementById("min").innerHTML=d.getMinutes();
+    document.getElementById("sec").innerHTML=d.getSeconds();
+ </script>
+</body>
+</html>

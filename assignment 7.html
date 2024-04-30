@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+          *{
+            margin: 5px;
+        }
+        #main{
+            height: 150px;
+            width: 613px;
+            border: 2px dotted  black;
+            margin: 5px;
+        }
+        #subbox1{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        } 
+        #subbox2{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        #subbox3{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        #subbox4{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        #main1{
+            height: 150px;
+            width: 613px;
+            border: 2px dotted  black;
+            margin: 20px;
+        }
+        #box1{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        #box2{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        } 
+        #box3{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        } 
+        #box4{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        } 
+        #main2{
+            height: 150px;
+            width: 459px;
+            border: 2px dotted  black;
+            margin: 50px;
+        }
+        #box5{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        #box6{
+            height: 150px;
+            width: 150px;
+            background-color: green;
+            margin: 0px;
+            font: left;
+            display:inline-block;
+            position: absolute;
+            top: 500px;
+            left: 70px;
+        }
+        #box7{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        #box8{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            margin: 0px;
+            font: left;
+            display: inline-block;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <p>position:static</p>
+    <div id="main">
+        <div id="subbox1">one</div>
+        <div id="subbox2">two</div>
+        <div id="subbox3">three</div>
+        <div id="subbox4">four</div>
+    </div> 
+    <p>position:relative</p>
+    <div id="main1">
+        <div id="box1">one</div>
+        <div id="box2">two</div>
+        <div id="box3">three</div>
+        <div id="box4">four</div>
+    </div>
+    <p>position:absolute</p>
+    <div id="main2">
+        <div id="box5">one</div>
+        <div id="box6">two</div>
+        <div id="box7">three</div>
+        <div id="box8">four</div>
+        
+    </div>   
+</body>
+</html>

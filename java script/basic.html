@@ -1,0 +1,62 @@
+<p>Inline javascript example</p>
+<button onclick="alert('Im inline')"> click me</button>
+
+    <p>Internal javascript example</p>
+    <button oneclick="tt1()">click me</button>
+    <script>
+        function tt1()
+        {
+            confirm("i m internal js");
+        }
+    </script>
+
+    <p>EXTERAL javascript example</p>
+    <button onclick="tt2()">click me</button>
+    <script src="script.js"></script>
+
+    <p>confirm() example</p>
+    <button onclick="tt3()">click the button and see result</button>
+    <script>
+        function tt3()
+        {
+          a=confirm("click any button to check result");
+          if(a==true)
+          {
+            alert("you have clicked ok button");
+          }
+          else{
+            alert("you have clicked CANCEL button")
+          }
+        }
+    </script>
+
+<p>prompt() example</p>
+<button onclick="tt4()">check your vote eligiblity</button>
+<script>
+    function tt4()
+    {
+      a=prompt("enter your age");
+      if(a>=18)
+      {
+        alert("eligibale");
+      }
+      else{
+        alert("not eligibale")
+      }
+    }
+</script>
+
+<p>output / print statement</p>
+<script>
+    document.write("welcome to designare");
+    document.writeln("welcome to designare technology")
+    document.write("welcomr to designare");
+    console.log("hello welcome");
+    </script>
+    <p>variable declaration</p>
+    <script>
+    var a=10;
+    b=20;
+    c=a+b;
+    document.write("sum:"+c);
+</script>

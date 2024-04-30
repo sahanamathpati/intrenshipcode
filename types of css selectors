@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <mata charset="UTF-8">
+    <mata name="viewport" content="width=device-width, initial-scale-1.8">
+    <title>nested division</title>
+    <style>
+            *{
+                margin:0px;
+            }
+            #service{
+                height: 500px;
+                width:400px;
+                background-color:lightblue;
+                margin:auto;
+            }
+             #heading{
+                height:50px;
+                width:400px;
+                background-color:blue;
+                text-align:center;
+                color:white;
+                lime-height50px;
+             }
+     </style>
+</head> 
+<body>
+    <div id="service">
+        <div id="padding">web designing</div>
+        <div id="ing"></div>
+        <div id="ecs"></div>
+    </div><1-- end of service-->
+</body> 
+</html>          
+    
+
+            

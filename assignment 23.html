@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+        border: solid 2px black;
+    }
+    </style>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="200"></canvas>
+
+  <script>
+    // Get the canvas element
+    var canvas = document.getElementById("myCanvas");
+    // Get the canvas context
+    var ctx = canvas.getContext("2d");
+
+    // Draw a red line
+    ctx.beginPath();
+    ctx.moveTo(350, 60); // Move the "pen" to the starting point
+    ctx.lineTo(40, 60); // Draw a line to the ending point
+    ctx.stroke() // Stroke the line
+    ctx.strokeStyle="red";
+    
+
+    // Draw a blue circle
+    ctx.beginPath();
+    ctx.arc(51, 150, 40, 0, 2 * Math.PI);   //x-axis move the top and bottom, y-axis move the right and left, size of the circle
+    ctx.fillStyle = "blue";
+    ctx.fill();
+    ctx.stroke();
+    ctx.strokeStyle="yellow";
+
+    // Draw text
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "red";
+    ctx.fillText("Hello, Canvas!", 100, 50);
+
+    //draw ellipes
+    ctx.beginPath();
+    ctx.ellipse(180, 140, 80, 50, 0, 0, 2* Math.PI); //centerX-width, centerY-height, radiusX-width, radiusY-height, 0, 0, 2 * Math.PI);
+    ctx.stroke(); // Stroke the ellipse outline
+    ctx.fillStyle="green";
+    ctx.fill();
+    ctx.strokeStyle="red";
+
+    // Draw the triangle
+    ctx.beginPath();
+    ctx.moveTo(280, 180); //point x, point y(move bottm)
+    ctx.lineTo(300,70); //point x, point y
+    ctx.lineTo(370, 180); //point x, point y(move bottm)
+    ctx.closePath(); // Connect the last point back to the starting point
+    ctx.stroke(); // Stroke the lines
+    ctx.strokeStyle="red";
+  </script>
+</body>
+</html>

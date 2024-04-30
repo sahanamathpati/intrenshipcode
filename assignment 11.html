@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        *{
+            margin:80px;
+        }
+        #box1{
+            height: 100px;
+            width: 200px;
+            background-color: pink;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            line-height: 30px;
+            padding: 2px;
+            border:solid 4px white;
+        }
+        #box2{
+            height: 100px;
+            width: 200px;
+            background-color: lightcoral;
+            position: absolute;
+            left: 100px;
+            top: 50px;
+            line-height: 30px;
+            padding: 2px;
+            border:solid 4px white;
+        }
+        #box3{
+            height: 100px;
+            width: 200px;
+            background-color: grey;
+            position: absolute;
+            left: 150px;
+            top: 90px;
+            line-height: 30px;
+            padding:2px;
+            border:solid 4px white;
+        }
+        #box4{
+            height: 100px;
+            width: 200px;
+            background-color: lightgreen;
+            position: absolute;
+            left: 200px;
+            top: 130px;
+            line-height: 30px;
+            padding: 2px;
+            border:solid 4px white;
+        }
+        #box5{
+            height: 100px;
+            width: 200px;
+            background-color: palevioletred;
+            position: absolute;
+            left: 250px;
+            top: 170px;
+            line-height: 30px;
+            padding: 2px;
+            border:solid 4px white;
+        }
+        #box6{
+            height: 100px;
+            width: 200px;
+            background-color: lightsalmon;
+            position: absolute;
+            left: 300px;
+            top: 210px;
+            line-height: 30px;
+            padding: 2px;
+            border:solid 4px white;
+        }
+        #box7{
+            height: 100px;
+            width: 200px;
+            background-color: plum;
+            position: absolute;
+            left: 350px;
+            top: 250px;
+            line-height: 30px;
+            padding: 2px;
+            border:solid 4px white;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">Background/Border</div>
+    <div id="box2">Negation Z-Index</div> 
+    <div id="box3">Block Level Boxes</div>
+    <div id="box4">Floated Blocks</div>
+    <div id="box5">Inline Boxes</div>
+    <div id="box6">Z-Index=0</div>
+    <div id="box7">Positive Z-index</div>
+    
+</body>
+</html>

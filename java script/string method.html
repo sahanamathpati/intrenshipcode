@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #box{
+            height: 100px;
+            width: 400px;
+            background-color: lightblue;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <label>Enter string</label><Br>
+            <input type="text" id="txt1">
+            <input type="button" onclick="check()" value="submit">
+    </div>
+    <script>
+        function check()
+        {
+            a=document.getElementById("txt1").value;
+            document.getElementById("length").innerHTML=a.length;
+            document.getElementById("ucase").innerHTML=a.toUpperCase();
+            document.getElementById("lcase").innerHTML=a.toLowerCase();
+            document.getElementById("indexof").innerHTML=a.indexOf("digisnare");
+            document.getElementById("lastindexof").innerHTML=a.lastIndexOf("digisnare");
+            document.getElementById("slice").innerHTML=a.slice(2,5);
+            document.getElementById("substr").innerHTML=a.substr(2,5);
+            document.getElementById("search").innerHTML=a.search("digisnare");
+            document.getElementById("charcodeat").innerHTML=a.charCodeAt("digisnare");
+            document.getElementById("replace").innerHTML=a.replace("digisnare","hiSBR");
+        }
+    </script>
+    <table border="1">
+        <tr><th>Length</th><td id="length"></td></tr>
+        <tr><th>uppercase</th><td id="ucase"></td></tr>
+        <tr><th>lowercase</th><td id="lcase"></td></tr>
+        <tr><th>indexof</th><td id="indexof"></td></tr>
+        <tr><th>lastindexof</th><td id="lastindexof"></td></tr>
+        <tr><th>slice</th><td id="slice"></td></tr>
+        <tr><th>substr</th><td id="substr"></td></tr>
+        <tr><th>search</th><td id="search"></td></tr>
+        <tr><th>charcodeat</th><td id="charcodeat"></td></tr>
+        <tr><th>replace</th><td id="replace"></td></tr>
+    </table>
+</body>
+</html>

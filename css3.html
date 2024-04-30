@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3 example</title>
+</head>
+<body>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            box-shadow: 10px 10px 10px red;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            text-shadow: 10px 10px 10px red;
+            border-radius: 20px;
+            animation-name: digisnare;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            float: left;
+        }
+        @keyframes digisnare
+        {
+            from{background-color: blue;font-size: 30px;}
+            to{background-color: green;font-size: 30px;color:red}
+        }
+        
+        .main{
+            height: 200px;
+            width: 200px;
+            border: solid 1px red;
+            float:left;
+            margin: 2px;
+        }
+        #rotate:hover{
+            transition: 3s;
+            transform: rotate(360deg);
+        }
+        #scale:hover{
+            transition: 3s;
+            transform: scale(2,2); /*x-axis, y-axis */
+        }
+        #skew:hover{
+            transition: 3s;
+            transform: skew(45deg,40deg); /*x-axis, y-axis */
+        }
+        #translate:hover{
+            transition: 3s;
+            transform: translate(45px,40px); /*x-axis, y-axis */
+        }
+        .rgba{
+            background-color: rgba(255,213,324,0.5);
+            text-align: center;
+            line-height: 200px;
+        }
+        .ef{
+            font-family: "Sarina", cursive;
+            font-weight: 400px;
+            font-style: normal;
+        }
+        .lg{
+            background: linear-gradient(
+                177deg
+                rgba(15,37,110,1)12%,
+                rgba(32,178,7,1)49%,
+                rgba(0,0,0,1)96%,
+            );
+        }
+        .rg{
+            background: radial-gradient(
+                100%,103%,at 54% 44%,
+                rgba(15,37,110,1)12%,
+                rgba(32,178,7,1)49%,
+                rgba(0,0,0,0)12%,
+            );
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Laile:wght@300,400,500,600,700&display">
+    </html>
+</body>
+<div class="box">Digisnare</div>
+<div class="main">Rotate
+    <img src="images/phone.png" width="200" height="185" id="rotate">
+</div>
+
+<div class="main">scale
+    <img src="images/phone.png" width="200" height="185" id="scale">
+</div>
+
+<div class="main">skew
+    <img src="images/phone.png" width="200" height="185" id="skew">
+</div>
+
+<div class="main">Translate
+    <img src="images/phone.png" width="200" height="185" id="translate">
+</div>
+
+<div class="main rgba">RGBA</div>
+<div class="main ef">External font
+    <img src="images/phone.png" width="200" height="185" id="external font">
+</div>
+
+<div class="main lg">Linear Gradint</div>
+<div class="main rg">Radial Gradint</div>
+</body>
+</html>

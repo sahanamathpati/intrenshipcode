@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas example</title>
+    <style>
+        canvas{
+            border: solid 2px red;
+        }
+   </style>
+</head>
+<body>
+   <p>default canvas 300*150</p>
+   <canvas></canvas>
+   <p>rect canvas</p>
+   <canvas width="200" height="200" id="rect"></canvas>
+   <script>
+    a=document.getElementById("rect"); //get assign id
+    b=a.getContext("2d"); //shabe of element
+    b.beginPath(); //define every element path
+    b.fillStyle="blue"; //background color
+    b.fillRect(50,50,100,100); //x,y,w,h
+    b.beginPath();
+    b.fillStyle="green";
+    globalAlpha=0.5;///to apply opacity
+    b.fillRect(70,70,100,100);
+   </script> 
+
+     <p>circle canvas</p>
+     <canvas width="200" height="200" id="circle"></canvas>
+     <script>
+    a=document.getElementById("circle"); //grt assign id
+    b=a.getContext("2d"); //shable of element
+    b.beginPath(); //define every element path
+    b.fillStyle="red"; //background color
+    b.arc(100,100,60,0,2*3.142);
+    b.fill();
+     </script>
+
+<p>lines canvas</p>
+<canvas width="200" height="200" id="line"></canvas>
+<script>
+a=document.getElementById("line"); //grt assign id
+b=a.getContext("2d"); //shable of element
+b.beginPath(); //define every element path
+b.strokestyle="red"; //background color
+b.moveTo(200,0);
+b.lineTo(0,200);
+b.stroke();
+
+b.beginPath();
+b.strokeStyle="green"; //background color
+b.moveTo(0,0);
+b.lineTo(100,100);
+b.stroke();
+
+b.beginPath();
+b.strokeStyle="yellow"; //background color
+b.moveTo(100,100);
+b.lineTo(200,200);
+b.stroke();
+</script>
+</body>
+</html>

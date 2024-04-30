@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number methods</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #box{
+            height: 100px;
+            width: 400px;
+            background-color: lightblue;
+            margin: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <label>Enter digit</label><Br>
+            <input type="text" id="txt1">
+            <input type="button" onclick="check()" value="submit">
+    </div>
+    <script>
+        function check()
+        {
+            a=document.getElementById("txt1").value;
+            n=Number(a);
+            document.getElementById("fixed2").innerHTML=n.toFixed(2);
+            document.getElementById("fixed4").innerHTML=n.toFixed(4);
+            document.getElementById("exponential2").innerHTML=n.toExponential(2);
+            document.getElementById("sqrt").innerHTML=Math.sqrt(n);
+            document.getElementById("power").innerHTML=Math.pow(n,2);
+            
+        }
+    </script>
+    <table border="1">
+        <tr><th>tofixed(2)</th><td id="fixed2"></td></tr>
+        <tr><th>tofixed(4)</th><td id="fixed4"></td></tr>
+        <tr><th>toexponential(2)</th><td id="exponential2"></td></tr>
+        <tr><th>sqrt</th><td id="sqrt"></td></tr>
+        <tr><th>power</th><td id="power"></td></tr>
+     
+    </table>
+</body>
+</html>

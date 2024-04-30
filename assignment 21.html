@@ -1,0 +1,29 @@
+     <canvas width="400" height="400" id="circle"></canvas>
+     <script>
+    a=document.getElementById("circle"); //grt assign id
+    b=a.getContext("2d"); //shable of element
+    b.beginPath(); //define every element path
+    b.fillStyle="red"; //background color
+    b.arc(200,200,80,0,2*3.142);
+    b.fill();
+    b.stroke();
+     
+    b.beginPath();
+    b.fillStyle="green";
+    globalAlpha=0.5;///to apply opacity
+    b.fillRect(140,140,120,120);
+    </script>
+
+    <canvas width="400" height="400" id="rect"></canvas>
+    <script>
+    a=document.getElementById("rect"); //get assign id
+    b=a.getContext("2d"); //shabe of element
+    b.beginPath(); //define every element path
+    b.fillStyle="blue"; //background color
+    b.fillRect(50,50,200,200); //x,y,w,h
+
+    b.beginPath();
+    b.fillStyle="green";
+    globalAlpha=0.5;///to apply opacity
+    b.fillRect(100,100,200,200);
+   </script> 

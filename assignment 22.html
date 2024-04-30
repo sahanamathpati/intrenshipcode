@@ -1,0 +1,36 @@
+<canvas
+   width="100" 
+   height="300"
+   id="circle" 
+   style="border:5px solid black;
+   background-color: blue;">
+</canvas>
+
+<script>
+a=document.getElementById("circle"); //grt assign id
+b=a.getContext("2d"); //shable of element
+b.beginPath(); //define every element path
+b.fillStyle="green"; //background color
+b.arc(50,250,40,0,2*3.142);
+b.fill();
+b.stroke();
+
+a=document.getElementById("circle"); //grt assign id
+b=a.getContext("2d"); //shable of element
+b.beginPath(); //define every element path
+b.fillStyle="yellow"; //background color
+b.arc(50,150,40,0,2*3.142); //x-axis move the top and bottom, y-axis move the right and left, size of the circle
+b.fill();
+b.stroke();
+
+a=document.getElementById("circle"); //grt assign id
+b=a.getContext("2d"); //shable of element
+b.beginPath(); //define every element path
+b.fillStyle="red"; //background color
+b.arc(50,50,40,0,2*3.142);
+b.fill();
+b.stroke();
+</script>
+
+
+    

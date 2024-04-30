@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial- scale=1.0">
+<title>form in java</title>
+<style>
+*{
+margin:0px;
+}
+#box{
+height:400px;
+width:400px;
+background-color:lightblue;
+margin:auto;
+padding:10px;
+}
+</style>
+</head>
+<body>
+<div id="box">
+<label>Name</label><br>
+<input type="text" id="name"><br>
+<label>Contact No</label><br>
+<input type="text" id="contactno"><br>
+<label>Email</label><br>
+<input type="text" id="email"><br>
+<label>Message</label><br>
+<textarea cols="40" rows="12"
+id="message"></textarea><br>
+<input type="button" value="Submit" onclick="validate()">
+</div>
+<script>
+function validate()
+{
+name=document.getElementById("name").value;
+if(name=="")
+{
+alert("Please enter name");
+document.getElementById("name").focus();
+}
+else{
+document.getElementById("nameval").innerHTML=name;
+}
+}
+</script>
+
+<p id="nameval"></p>
+</body>
+</html>

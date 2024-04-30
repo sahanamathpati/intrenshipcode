@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 example</title>
+    </head>
+    <body>
+    <style>
+        *{
+            margin: 2px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            box-shadow: 10px 10px 10px red;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-weight: bold;
+            text-shadow: 10px 10px 10px red;
+            border-radius: 20px;
+            animation-name: digisnare;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            float: left;
+        }
+        @keyframes digisnare
+        {
+            from{background-color: blue;font-size: 30px;}
+            to{background-color: green;font-size: 30px;color:red}
+        }
+        .main{
+            height: 200px;
+            width: 200px;
+            border: solid 1px red;
+            float:left;
+        }
+        #rotate:hover{
+            transition: 3s;
+            transform: rotate(360deg);
+        }
+        #scale:hover{
+            transition: 3s;
+            transform: scale(2,2); /*x-axis, y-axis */
+        }
+        #skew:hover{
+            transition: 3s;
+            transform: skew(45deg,40deg); /*x-axis, y-axis */
+        }
+        #translate:hover{
+            transition: 3s;
+            transform: translate(45px,40px); /*x-axis, y-axis */
+        }
+    </style> 
+</head>
+<body>
+    <div class="box">Degisnare</div>
+    <div class="main">Rotate
+     <img src="images/1.png" width="200" height="185" id="rotate">     
+    </div>
+    <div class="main">Scale
+    <img src="images/1.png" width="200" height="185" id="scale">     
+    </div>
+    <div class="main">Skew
+    <img src="images/1.png" width="200" height="185" id="skew">     
+    </div>
+    <div class="main">Translate
+    <img src="images/1.png" width="200" height="185" id="translate">     
+    </div>
+</body>
+</html>

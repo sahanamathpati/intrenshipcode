@@ -1,0 +1,25 @@
+<p>Textbox to accetpt only digit[0-9]</p>
+<input type="text" onkeypress="return onlydigit()">
+<p id="error1" style="color:red; display:none">enter only digit</p>
+<script>
+    function onlydigit(){
+        ip=event.which;
+        range=((ip>=48 && ip<=57) || ip==43 || ip==45); //condition as per ascii
+        //alert(range); // you get true or false value
+        document.getElementById("error1").style.display=range?"none":"block";
+        return range; //return back to function
+    }
+</script>
+
+<p>Textbox to accetpt only alphabets[a-z, A-Z]</p>
+<input type="text" onkeypress="return onlyalpha()">
+<p id="error2" style="color:red; display:none">enter only alphabets only</p>
+<script>
+    function onlyalpha(){
+        ip=event.which;
+        range=((ip>=65 && ip<=90) || ip<=97 && ip<=112 ||ip==32); //condition as per ascii
+        //alert(range); // you get true or false value
+        document.getElementById("error2").style.display=range?"none":"block";
+        return range; //return back to function
+    }
+</script> 

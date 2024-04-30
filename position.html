@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position example</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        #whatsapp{
+            left: 30px;
+            bottom: 30px;
+            position: fixed;
+            height: 50px;
+            width: 50px;
+        }
+        #phone{
+            left: 30px;
+            bottom: 80px;
+            position: fixed;
+            height: 50px;
+            width: 50px;
+
+        }
+        #chat{
+            right: 0px;
+            bottom: 50%;
+            position: fixed;
+            height: 50px;
+            width:  50px;
+            margin-bottom: -25px;
+        }
+        #absolute{
+            height: 200px;
+            width: 50px;
+            /*border: solid 1px red;*/
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            margin-top: -100px;
+        }
+        #relative{
+            height: 400px;
+            width: 600px;
+            border: solid 1px red;
+            margin: auto;
+            position: relative;
+        }
+        #prev{
+            height: 50px;
+            width: 50px;
+            border: solid 1px red;
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            margin-top: -25px;
+        }
+        #next{
+            height: 50px;
+            width: 50px;
+            border: solid 1px red;
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            margin-top: -25px;
+        }
+    </style>
+</head>
+<body>
+    <div id="relative">
+    <div id="prev"></div>
+    <div id="next"></div>
+    </div>
+    <div id="whatsapp"><a href="http://api.whatsapp.com/send?phonee=6360614178">
+        <img src="images/wa.png"></a></div><!--end of whatsapp-->
+        <div id="phone"><a href="tel:+6360614178"><img src="images/phone.png"></a>
+        </div><!--end of phone-->
+        <div id="chat"><img src="images/cht.png"></a></div><!--end of chat-->
+            <div id="absolute">
+                <img src="images/twitter.png">
+                <img src="images/youtube.png">
+                <img src="images/instagram.png">
+                <img src="images/facebook.png">
+            </div>       
+</body>
+</html>
